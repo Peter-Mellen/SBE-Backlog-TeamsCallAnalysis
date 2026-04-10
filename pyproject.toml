@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sbe-teams-call-analysis-poc"
+version = "0.1.0"
+description = "Backend-only proof of concept for pulling Teams transcripts with Microsoft Graph."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+sbe-teams-poc = "sbe_teams_call_analysis.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
